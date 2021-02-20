@@ -20,11 +20,10 @@ int main(){
         cin>>a[i]>>b[i]>>g[i]>>k[i]; //注意:(a,b)是地毯左下角的坐标.g,k是该块地毯x,y轴上的长度
     }
     int x,y; //判断用的点
-    bool l=0;
     cin>>x>>y;
     for(int d=n;d>=1;d--){ //逆序倒推
         if(x>=a[d]&&x<=a[d]+g[d]&&y<=b[d]+k[d]&&y>=b[d]){
-            cout<<x<<" "<<y<<endl;
+            cout<<d<<endl;
             return 0;
         }
     }
