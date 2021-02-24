@@ -4,6 +4,7 @@
 --------------------------------------*/
 //https://www.luogu.com.cn/problem/P1031
 //https://www.luogu.com.cn/record/47010311
+//https://www.luogu.com.cn/record/47010349
 #include<iostream>
 using namespace std;
 int main(){
@@ -31,7 +32,7 @@ int main(){
         if(p[i]==0){
             continue;
         }
-        p[n+1]+=p[i];
+        p[i+1]+=p[i];
         ans++;
     }
     cout<<ans;
