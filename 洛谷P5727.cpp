@@ -1,50 +1,35 @@
+/*-------------------------------/
+    P5727 【深基5.例3】冰雹猜想
+/-------------------------------*/
+//https://www.luogu.com.cn/problem/P5727
+
+//给出一个正整数 n (n <= 100)，然后对这个数字一直进行下面的操作：
+//如果这个数字是奇数，那么将其乘 3 再加 1，否则除以 2。经过若干次循环后，最终都会回到 1。
+//经过验证很大的数字（7×10^11）都可以按照这样的方式比变成 1，所以被称为“冰雹猜想”。
+//例如当 n 是 20，变化的过程是 [20, 10, 5, 16, 8, 4, 2, 1]。
+//根据给定的数字，验证这个猜想，并从最后的 1 开始，倒序输出整个变化序列。
+
+//https://www.luogu.com.cn/record/34483044
+//https://www.luogu.com.cn/record/52425424
+
 #include<iostream>
-#include<algorithm>
-#include<cmath>
-#include<cstring>
 using namespace std;
 int main(){
-    //这是非倒叙的情况
-    //非常完美
-    //可惜需要倒过来输出（
-    /*
-    int num;
-    cin>>num;
-    if(num==1){
-        cout<<"1";
-    }else{
-        while(num!=1){
-            cout<<num<<" ";
-            if(num%2==1){
-                num*=3;
-                num+=1;
-            }else if(num%2==0){
-                num/=2;
-            }
+    int n,h=0;
+    cin>>n;
+    int a[10000];
+    a[0]=n;
+    for(h=1;n!=1;h++){
+        if(n%2==0){
+            n/=2;
+        }else if(n%2==1){
+            n*=3;
+            n++;
         }
-        cout<<"1";
+        a[h]=n;
     }
-    */
-    int num[10000],i,n;
-    cin>>num[0];
-    if(num[0]==1){
-        cout<<"1";
-        return 0;
-    }else{
-        for(i=1;;i++){
-            if(num[i-1]==1){
-                num[i]=num[n-1]*3;
-                num[i]+=1;
-            }else if(num[i-1]==0){
-                num[i]=num[i-1]/2;
-            }else if(num[i]==1){
-                n=i;
-                break;
-            }
-        }
-    }
-    for(;i>=0;i--){
-        cout<<num[i]<<" ";
+    for(int l=h-1;l>=0;l--){
+        cout<<a[l]<<" ";
     }
     return 0;
 }
