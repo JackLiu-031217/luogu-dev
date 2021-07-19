@@ -35,5 +35,8 @@
 /.vscode/
 .vscode/settings.json
 
+# Code Runner - Visual Studio Code Plugin
+*tempCodeRunnerFile*
+
 #ntfs-3g / fuse
 .fuse*
