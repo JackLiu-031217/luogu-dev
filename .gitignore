@@ -38,5 +38,8 @@
 # Code Runner - Visual Studio Code Plugin
 *tempCodeRunnerFile*
 
-#ntfs-3g / fuse
+# ntfs-3g / fuse
 .fuse*
+
+# Competitive Programming Helper Extensions for VS Code
+.cph/
