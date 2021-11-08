@@ -43,3 +43,8 @@
 
 # Competitive Programming Helper Extensions for VS Code
 .cph/
+
+#OpenJudge I/O Data File
+*.in
+*.out
+*.ans
