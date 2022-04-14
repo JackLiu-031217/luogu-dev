@@ -13,8 +13,8 @@
 #include<iostream>
 #include<iomanip>
 using namespace std;
-int n,a[20];
-bool l[20];
+int n,a[10];
+bool l[10];
 void dfs(int s){
     if(s>n){
         for(int i=1;i<=n;i++){
