@@ -23,8 +23,8 @@ int main(){
     cin>>aa;
     cin>>bb;
 
-    //以下内容对于 cpp14 / gcc9 没用
-    //同时导致了 5 次查错的失败
+    //以下内容导致了查错失败
+    //原因不明
     //getline(cin,aa);
     //getline(cin,bb);
 
