@@ -1,24 +1,25 @@
-/*------------------------------------------ 
-        P4414 [COCI2006-2007#2]  ABC
-    https://www.luogu.com.cn/problem/P4414
-------------------------------------------*/
+// Problem: P4414 [COCI2006-2007#2] ABC
+// Contest: Luogu
+// URL: https://www.luogu.com.cn/problem/P4414
+// Memory Limit: 125 MB
+// Time Limit: 1000 ms
+// 
+// Powered by CP Editor (https://cpeditor.org)
 
-//You will be given three integers A, B and C.
-//The numbers will not be given in that exact order, but we do know that A is less than B and B less than C.
-//In order to make for a more pleasant viewing, we want to rearrange them in the given order.
-
-//https://www.luogu.com.cn/record/33648696
-//https://www.luogu.com.cn/record/33700932
-//https://www.luogu.com.cn/record/33700977
-
-#include<bits/stdc++.h>
+#include<iostream>
+#include<algorithm>
 using namespace std;
 int main(){
-    int i[3],o;
-    char a,b,c;
-    cin>>i[0]>>i[1]>>i[2];
-    cin>>a>>b>>c;
-    sort(i,i+3);
-    cout<<i[a-'A']<<" "<<i[b-'A']<<" "<<i[c-'A'];
+    int a[3];
+    for(int i=0;i<3;i++){
+        cin>>a[i];
+    }
+    sort(a,a+3);
+    for(int i=0;i<3;i++){
+        char b;
+        cin>>b;
+        cout<<a[b-'A']<<" ";
+    }
+    cout<<endl;
     return 0;
 }
