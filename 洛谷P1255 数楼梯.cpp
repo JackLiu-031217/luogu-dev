@@ -6,7 +6,7 @@
 // 
 // Powered by CP Editor (https://cpeditor.org)
 
-//https://www.luogu.com.cn/record/76676675
+//https://www.luogu.com.cn/record/76663782
 //https://www.luogu.com.cn/record/76676675
 
 #include<iostream>
