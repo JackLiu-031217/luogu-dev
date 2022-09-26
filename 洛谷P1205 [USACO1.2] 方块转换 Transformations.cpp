@@ -16,9 +16,12 @@ bool check(int stage,bool check_not_in_stage_5th){
             }
         }
     }
+    /*
     if(check_not_in_stage_5th){
         cout<<stage<<endl;
     }else cout<<5<<endl;
+    */
+    check_not_in_stage_5th ? cout<<stage<<endl : cout<<5<<endl;
     return 1;
 }
 void acr(){
@@ -73,8 +76,6 @@ bool check_4to5(){
     }
     return 0;
 }
-/// @brief 
-/// @return 
 int main(){
     cin>>n;
     for(int i=1;i<=n;i++){
