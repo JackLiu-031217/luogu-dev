@@ -7,7 +7,7 @@ int main(){
     cin>>m>>t>>s;
     if(t==0)
     {
-        cout<<m<<endl;
+        cout<<0<<endl;
         return 0;
     }
     if(s%t==0)
