@@ -11,7 +11,10 @@ int main(){
     }else if(bmi>=18.5&&bmi<24){
         cout<<"Normal";
     }else{
-        cout<<bmi<<endl<<"Overweight";
+        cout<<bmi<<endl<<"Overweight"; //C++
+        //double bb=bmi;
+        //printf("%6g\nOverweight\n",bmi); //C
+        //C语言下的做法并不严谨，详见 https://www.luogu.com.cn/discuss/472998
     }
     return 0;
 }
