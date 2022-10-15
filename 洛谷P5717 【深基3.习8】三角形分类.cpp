@@ -7,7 +7,8 @@ int main(){
     cin>>a>>b>>c;
     if(a>c) swap(a,c); //swap好文明(
     if(b>c) swap(b,c);
-    if(a+b<c){
+    if(a+b<c){ //2022.10.25 测试点新增，卡了a+b==c的数据
+    if(a+b<=c){
         cout<<"Not triangle";
         return 0;
     }
